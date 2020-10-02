@@ -4,8 +4,8 @@ module.exports = function dateSample(sampleActivity) {
   let sampleActivityNumber = parseFloat(sampleActivity)
   
     if (typeof(sampleActivity) !== "string" || isNaN(sampleActivityNumber) || sampleActivityNumber <= 0) {
-      return false
-    } else return Math.ceil(Math.log(MODERN_ACTIVITY / sampleActivityNumber) / 0.693 / HALF_LIFE_PERIOD)
+      return false;
+    } else return Math.ceil(Math.log(MODERN_ACTIVITY / sampleActivityNumber) / 0.693 / HALF_LIFE_PERIOD);
 };
 
 // константа скорости реакции k
